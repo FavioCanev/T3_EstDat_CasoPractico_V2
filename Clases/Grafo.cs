@@ -140,9 +140,9 @@ namespace Clases
         public void navegarGrafo(Vertice actual)
         {
             //Console.Clear();
-            Console.WriteLine("Recorriendo el grafo");
-            Console.WriteLine("Vertice actual: " + actual.lugar);
-            Console.WriteLine("Aristas/Vertices conectados: ");
+            Console.WriteLine("Recorriendo el mapa");
+            Console.WriteLine("Lugar actual: " + actual.lugar);
+            Console.WriteLine("Lugares conectados: ");
             if (actual.arista1 != null) { Console.WriteLine("1. -> [" + actual.arista1.lugar + "]"); }
             if (actual.arista2 != null) { Console.WriteLine("2. -> [" + actual.arista2.lugar + "]"); }
             if (actual.arista3 != null) { Console.WriteLine("3. -> [" + actual.arista3.lugar + "]"); }
@@ -150,7 +150,7 @@ namespace Clases
             if (actual.arista5 != null) { Console.WriteLine("5. -> [" + actual.arista5.lugar + "]"); }
             if (actual.arista6 != null) { Console.WriteLine("6. -> [" + actual.arista6.lugar + "]"); } 
 
-            Console.WriteLine("\n7. Volver al inicio del grafo \n0. Salir");//agrego la opción 6 que siempre va a estar ahí como la opción 0
+            Console.WriteLine("\n7. Volver a Cajamarca \n0. Salir");//agrego la opción 7 que siempre va a estar ahí como la opción 0
             Console.Write("Seleccione una opción: ");
             int op = int.Parse(Console.ReadLine());
 
